@@ -11,7 +11,6 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
         }
 
         nav {
@@ -19,6 +18,9 @@
             justify-content: space-between;
             padding: 25px 60px;
             border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            background-color: #0a0a0a;
         }
 
         nav a {
@@ -27,75 +29,133 @@
             margin-left: 25px;
         }
 
-        .hero {
-            padding: 120px 80px;
+        .hero, .section {
+            padding: 90px 70px;
+            border-bottom: 1px solid #222;
         }
 
         h1 {
-            font-size: 72px;
-            margin-bottom: 20px;
+            font-size: 58px;
+            max-width: 1100px;
         }
 
-        p {
-            font-size: 22px;
-            color: #b0b0b0;
-            max-width: 800px;
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        p, li {
+            color: #c7c7c7;
+            font-size: 19px;
             line-height: 1.6;
+            max-width: 950px;
         }
 
-        .section {
-            padding: 80px;
-            border-top: 1px solid #222;
-        }
-
-        .section h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
         }
 
         .card {
             background-color: #111;
-            padding: 30px;
+            padding: 28px;
             border-radius: 16px;
-            margin-top: 20px;
+        }
+
+        .card:hover {
+            background-color: #181818;
         }
     </style>
 </head>
 
 <body>
-
     <nav>
-        <div><strong>Tony Chang</strong></div>
-
+        <strong>Tony Chang</strong>
         <div>
-            <a href="#">About</a>
-            <a href="#">Experience</a>
-            <a href="#">Writing</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <section class="hero">
-        <h1>Standing at the edge of change.</h1>
-
+        <h1>Finance leadership across China, joint ventures, and multinational industrial operations.</h1>
         <p>
-            Business, technology, investing, fitness, and lifelong learning.
-            Building independently across disciplines while exploring the future of AI and human potential.
+            Senior finance executive with 30 years of experience within SK Group across Korea,
+            China, and Hong Kong, specializing in CFO leadership, cross-border financial governance,
+            joint-venture oversight, IPO preparation, and multinational subsidiary management.
         </p>
     </section>
 
-    <section class="section">
+    <section class="section" id="about">
         <h2>About</h2>
+        <p>
+            Tony Chang is a Korea-born finance executive with long-term overseas experience in China
+            and Hong Kong. His career has focused on financial control, corporate governance,
+            manufacturing finance, petrochemical operations, and strategic monitoring of multinational
+            subsidiaries and joint ventures.
+        </p>
+    </section>
 
-        <div class="card">
-            <p>
-                Tony Chang is focused on long-term thinking across business,
-                technology, investing, and personal growth.
-                With experience in China and deep curiosity about AI and the future,
-                he believes in continuous reinvention through disciplined learning.
-            </p>
+    <section class="section" id="experience">
+        <h2>Experience</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>SK Group</h3>
+                <p>30 years of continuous service across headquarters and overseas subsidiaries.</p>
+            </div>
+
+            <div class="card">
+                <h3>CFO — Sinopec-SK Wuhan Petrochemical JV</h3>
+                <p>Full CFO responsibility in a 65% Sinopec / 35% SKGC joint venture in China.</p>
+            </div>
+
+            <div class="card">
+                <h3>CFO — SKGC China Trading & China HQ</h3>
+                <p>Financial monitoring, governance, risk control, and reporting for major China operations.</p>
+            </div>
+
+            <div class="card">
+                <h3>Hong Kong IPO Preparation</h3>
+                <p>Supported pre-IPO structuring, audit coordination, A1 filing, and capital market interface.</p>
+            </div>
+
+            <div class="card">
+                <h3>Guangdong Manufacturing Finance</h3>
+                <p>Led financial operations for a foreign-invested synthetic resin manufacturing entity.</p>
+            </div>
+
+            <div class="card">
+                <h3>ERP & Financial Process Governance</h3>
+                <p>Corporate accounting, ERP management, and financial process optimization at headquarters.</p>
+            </div>
         </div>
     </section>
 
+    <section class="section" id="expertise">
+        <h2>Core Expertise</h2>
+
+        <div class="grid">
+            <div class="card"><h3>CFO Leadership</h3><p>China-based financial leadership and governance.</p></div>
+            <div class="card"><h3>Joint Venture Governance</h3><p>SOE partnership and minority shareholder oversight.</p></div>
+            <div class="card"><h3>Cross-border Finance</h3><p>Korea-China-Hong Kong financial control and reporting.</p></div>
+            <div class="card"><h3>IPO Preparation</h3><p>Pre-listing structuring, audit coordination, and capital market interface.</p></div>
+            <div class="card"><h3>Petrochemical Finance</h3><p>Finance leadership in manufacturing and petrochemical sectors.</p></div>
+            <div class="card"><h3>Risk Management</h3><p>Subsidiary monitoring, treasury, tax, compliance, and internal control.</p></div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>For professional inquiries, advisory opportunities, or China-focused financial governance discussions.</p>
+    </section>
 </body>
 </html>
